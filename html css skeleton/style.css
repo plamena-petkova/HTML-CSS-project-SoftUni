@@ -1,6 +1,6 @@
 body {
     margin:0;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Helvetica', 'sans-serif';
     background-color: #ffd166;
 }
 
@@ -8,52 +8,75 @@ body {
     box-sizing: border-box;
 }
 
-.navigation {
-    height: 600px;
-    margin-top: -18px;
-}
 
 .nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    
-    height: 130px;
+    justify-content: space-between;  
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .wrapper {
     display: flex;
     margin: 20px;
     justify-content: center;
-    margin-top: 35px;
     
 }
 
 .logo-wrapper {
     display: flex;
     flex-direction: row;
-    margin: 10px 5px;
-    justify-content: center;
-    margin-top: 35px;   
+    margin: 20px 5px;
+    justify-content: center; 
 }
 
-/* .img-background {
+.img-background {
     display: flex;
     justify-content: center;
-    object-fit: fill;
+    object-fit: cover;
+    height: 400px;
 }
 
 .img-background img {
     width: 100%;
     object-fit: cover;
-} */
+}
 
 
 .popular-fests {
     display: flex;
-
+    margin: 50px 40px;
+    justify-content: space-between;
 }
+
+
+.popular-fest-item {
+    width: 335px;
+    border: none;
+    box-shadow: 0px 0px 10px;
+    border-radius: 15px;
+    margin: 20px 20px;
+}
+
+.popular-fests-title, .fest-city-title {
+    text-align: center;
+    margin: 60px 40px;
+}
+
+.img-fest {
+    width: 350px;
+    height: 230px;
+    object-fit: cover;
+    padding: 45px 30px ;
+}
+
+
+.img-fest img {
+    width: 80%;
+    height: 80%;
+}
+
 
 .popular-fest-text {
     margin: 20px; 
@@ -78,24 +101,28 @@ body {
 }
 
 
-header {
+
+/* header {
     height: 700px;
     max-width: 100vw;
     background-image: url('https://cdn.pixabay.com/photo/2018/04/17/22/47/wood-3329037_1280.jpg');
     background-repeat: no-repeat;
-}
+} */
 
 .city-item {
-    margin: 30px 30px;
+    margin: 20px 42px;
     border-radius: 200px;
     height: 250px;
     width: 250px;
+    padding: 20px 20px;
 
 }
 
 .fest-city {
     display: flex;
-    background-color: ;
+    margin: 0px 60px;
+    /* padding: 30px 0px; */
+    justify-content: space-between;
 }
 
 .city-item img {
@@ -107,20 +134,42 @@ header {
    
 }
 
-.img-fest {
-    width: 350px;
-    height: 230px;
-    object-fit: cover;
-    /* margin: 20px 20px; */
-    padding: 30px ;
+footer{
+    background-color: #118ab2;
 }
 
-.img-fest img {
-    width: 100%;
-    height: 100%;
+.contact {
+    display: flex;
+    justify-content: space-between;
 }
 
-.popular-fest-item {
-    margin: 10px 5px;
+.socials li {
+    list-style: none;
+    margin: 10px 10px;
+
 }
+
+.socials {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+
+.contact-links li {
+    list-style: none;
+    line-height: 2;
+    font-weight: bold;
+    
+}
+
+.social-links {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-content {
+    margin: 0 80px;
+}
+
 
