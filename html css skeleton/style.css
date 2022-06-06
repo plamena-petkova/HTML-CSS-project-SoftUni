@@ -1,7 +1,7 @@
 body {
     margin:0;
-    font-family: 'Helvetica', 'sans-serif';
-    background-color: #ffd166;
+    font-family: 'Lato', 'sans-serif';
+    background-color: #fefae0;
 }
 
 *, **, ::before, ::after {
@@ -65,22 +65,27 @@ body {
 }
 
 .img-fest {
-    width: 350px;
+    width: 420px;
     height: 230px;
     object-fit: cover;
-    padding: 45px 30px ;
+    padding: 0px 0px;
+    
 }
 
 
 .img-fest img {
     width: 80%;
     height: 80%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 
-.popular-fest-text {
-    margin: 20px; 
-    padding: 20px ;
+.popular-fest-text, .popular-fest-dates {
+    margin: 0px 0;
+    padding: 20px 0px;
+    text-align: center;
+    margin-top: -20px;
 }
 
 .nav-links {
@@ -94,7 +99,7 @@ body {
     text-decoration: none;
     margin: 20px 0;
     padding: 10px 10px;
-    background-color: #118ab2;
+    background-color: #1C4670;
     border-radius: 10px;
     color: white;
     font-weight: bold;
@@ -115,7 +120,14 @@ body {
     height: 250px;
     width: 250px;
     padding: 20px 20px;
+    text-align: center;
 
+}
+
+.city-name {
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .fest-city {
@@ -135,7 +147,7 @@ body {
 }
 
 footer{
-    background-color: #118ab2;
+    background-color: #1C4670;
 }
 
 .contact {
@@ -160,16 +172,33 @@ footer{
     list-style: none;
     line-height: 2;
     font-weight: bold;
+    color: white;
     
 }
 
 .social-links {
     text-decoration: none;
-    color: black;
+    color:white;
 }
 
 .footer-content {
     margin: 0 80px;
 }
 
+
+.tickets {
+    display: flex;
+    justify-content: center;
+    margin: -45px 0;
+}
+
+.ticket-btn {
+    padding: 20px 50px;
+    margin: 40px 20px;
+    border-radius: 25px;
+    background-color: #1C4670;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 
