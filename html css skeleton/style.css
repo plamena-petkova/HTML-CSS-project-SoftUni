@@ -49,6 +49,7 @@ body {
 
 .popular-fests {
     display: flex;
+    flex-wrap: wrap;
     margin: 50px 40px;
     justify-content: space-between;
 }
@@ -140,8 +141,8 @@ body {
 
 .fest-city {
     display: flex;
+    /* flex-wrap: wrap; */
     margin: 0px 60px;
-    /* padding: 30px 0px; */
     justify-content: space-between;
 }
 
@@ -251,7 +252,7 @@ form {
 }
 
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=url] {
     width: 100%;
     padding: 10px 10px;
     margin: 8px 0;
@@ -352,3 +353,109 @@ input[type=text], input[type=password] {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
+
+.festival-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 800px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px;
+    padding: 30px 30px;
+}
+
+
+
+.add-festival-title {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    text-align: center;
+    font-size: 40px;
+    margin: 5px;
+}
+
+.fa-music {
+    font-size: 45px;
+    text-align: center;
+    padding: 30px;
+}
+
+.btn-add-fest {
+    display: flex;
+    justify-content: center;
+    /* padding: 20px 30px; */
+}
+
+.fest-btn {
+    padding: 10px 25px;
+    margin: 10px 20px;
+    border-radius: 25px;
+    background-color: #1C4670;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ticket-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.plus, .minus {
+    padding: 8px 20px;
+    margin: 10px 0px;
+    border-radius: 25px;
+    background-color: #1C4670;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 40px;
+    
+}
+
+.fest-item {
+    width: 337px;
+
+    border: none;
+    box-shadow: 0px 0px 10px;
+    border-radius: 15px;
+    margin: 20px 20px;
+}
+
+.fest-text, .fest-dates, .catalog-summary, .catalog-location {
+    margin: 0px 0;
+    padding: 20px 0px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.user-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete, .edit, .save {
+    padding: 10px 25px;
+    margin: 35px 10px;
+    border-radius: 25px;
+    background-color: #1C4670;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
