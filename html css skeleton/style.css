@@ -221,22 +221,25 @@ footer{
 }
 
 .login-container {
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
-}
-
-
-.login {
     width: 350px;
     height: 500px;
     border-radius: 15px;
     box-shadow: 0px 0px 10px;
-    padding: 0px 30px;
-    margin: 30px 20px;
-    align-items: center;
 }
 
+.wrapper-login {
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px;
+    padding: 30px 30px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    padding: 100px 100px;
+}
 
 
 .login-title {
@@ -248,29 +251,19 @@ footer{
 }
 
 
-/* .email, .pass {
-    width: 200px;
-    height: 20px;
-    padding: 8px 8px;
-} */
-
-input[type=text] {
+input[type=text], input[type=password] {
     width: 100%;
-    padding: 12px 20px;
+    padding: 10px 10px;
     margin: 8px 0;
     box-sizing: border-box;
     border: 1px solid #555;
     outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color:#fefae0;
 }
 
-input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 1px solid #555;
-    outline: none;
-}
+
 
 .fa-right-to-bracket {
     font-size: 45px;
@@ -279,12 +272,19 @@ input[type=password] {
 
 
 .wrapper-mail i, .wrapper-pass i {
-    margin: 10px;   
+    margin: 8px auto;   
     border:1px solid black;
     padding: 10px 10px;
     box-sizing: border-box;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
 }
 
+
+.wrapper-mail, .wrapper-pass {
+    display: flex;
+}
 
 
 
@@ -296,3 +296,59 @@ input[type=password] {
     text-decoration: none;
 }
 
+.login-btn {
+    padding: 10px 35px;
+    margin: 30px 0px;
+    border-radius: 25px;
+    background-color: #1C4670;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.wrapper-register {
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px;
+    padding: 30px 30px;
+}
+
+.register-title {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    text-align: center;
+    font-size: 40px;
+    margin: 5px;
+}
+
+.register-btn {
+    padding: 10px 35px;
+    margin: 30px 0px;
+    border-radius: 25px;
+    background-color: #1C4670;
+    color: white;
+    text-decoration: none;
+    font-weight: bold
+}
+
+.firstName, .lastName {
+    display: flex;
+    margin: 8px auto;
+}
+
+.firstName i, .lastName i {
+    margin: 8px auto;   
+    border:1px solid black;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
